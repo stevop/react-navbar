@@ -1,0 +1,77 @@
+nav {
+	background-color: #141414;
+}
+.Nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Nav .Nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-height: 70px;
+}
+.Nav .Nav-header img {
+	margin-left: 50px;
+	width: 110px;
+}
+.Nav .Nav-header button {
+	display: none;
+}
+.Nav .Nav-links {
+	display: flex;
+	align-items: center;
+}
+.Nav .Nav-links ul {
+	margin-right: 50px;
+}
+.Nav .Nav-links li {
+	display: inline-block;
+	margin-left: 10px;
+}
+.Nav .Nav-links li a {
+	color: #e5e5e5;
+	text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+	.Nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.Nav .Nav-header {
+		width: 100%;
+	}
+	.Nav .Nav-header button {
+		display: block;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.Nav .Nav-header button .Nav-hamburger {
+		color: #e5e5e5;
+		font-size: 25px;
+		margin-right: 20px;
+	}
+	.Nav .Nav-links ul {
+		margin-left: 50px;
+	}
+	.Nav .Nav-links li {
+		padding: 10px 5px;
+		width: 100%;
+	}
+
+	/* React classes */
+	.hide {
+		height: 0px;
+		overflow: hidden;
+		transition: 100ms linear all;
+	}
+	.show {
+		background-color: #141414;
+		height: 150px;
+		transition: 100ms linear all;
+	}
+}
